@@ -1,0 +1,12 @@
+@use "./globals.scss";
+@use "./heroSlider.style.scss";
+@use "./swiperSlider.style.scss";
+@use "./card.style.scss";
+
+@use "swiper/scss";
+@use "swiper/scss/navigation";
+@use "swiper/scss/pagination";
+@use "swiper/scss/grid";
+@use "swiper/scss/parallax";
+@use "swiper/scss/scrollbar";
+@use "swiper/scss/effect-fade";

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #121212;
+  --heading-primary-color: #3ecf8e;
+  --text-primary-color: #fafafa;
+  --text-secondary-color: #848484;
+  --btn-primary-bg: #287050;
+  --btn-secondary-bg: #242424;
+  --border-primary-color: #121212;
+  --border-secondary-color: #454545;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: #0a0a0a;
+//     --foreground: #ededed;
+//   }
+// }
+
+body {
+  color: var(--text-primary-color);
+  background: var(--bg-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar {
+  ms &::-webkit-scrollbar-track {
+    background-color: #7b7b7b;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #7b7b7b;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #7b7b7b;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
