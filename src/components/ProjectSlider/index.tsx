@@ -15,7 +15,7 @@ const ProjectSlider = () => {
     { id: 7, imgUrl: "/assets/hero-images/hero-image-7.jpg" },
     { id: 8, imgUrl: "/assets/hero-images/hero-image-8.jpg" },
     { id: 9, imgUrl: "/assets/hero-images/hero-image-9.jpg" },
-    { id: 10, imgUrl: "/assets/hero-images/hero-image-10.jpg" }
+    { id: 10, imgUrl: "/assets/hero-images/hero-image-10.jpg" },
   ];
 
   return (
@@ -29,7 +29,7 @@ const ProjectSlider = () => {
               width={300}
               height={300}
               priority
-              className="w-full h-[300px] object-cover"
+              className="h-[300px] w-full object-cover"
             />
           </SwiperSlide>
         ))}

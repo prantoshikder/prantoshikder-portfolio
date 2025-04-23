@@ -8,7 +8,7 @@ interface ILoader {
 const Loader: React.FC<ILoader> = ({ className }) => {
   return (
     <div
-      className={`flex justify-center items-center w-full ${
+      className={`flex w-full items-center justify-center ${
         className ?? "loader"
       }`}
     >

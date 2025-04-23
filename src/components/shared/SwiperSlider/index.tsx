@@ -11,7 +11,7 @@ import {
   Mousewheel,
   Navigation,
   Pagination,
-  Parallax
+  Parallax,
 } from "swiper/modules";
 
 interface ISwiperSlider {
@@ -26,7 +26,7 @@ const SwiperSlider: FC<ISwiperSlider> = ({
   swiperProps,
   children,
   className = "",
-  isShowBtn = true
+  isShowBtn = true,
 }) => {
   const sliderRef = useRef<any>();
   const [isEnd, setIsEnd] = useState(false);
@@ -57,17 +57,17 @@ const SwiperSlider: FC<ISwiperSlider> = ({
           onSlideChange={handleSlideChange}
           breakpoints={{
             640: {
-              slidesPerView: 2
+              slidesPerView: 2,
             },
             768: {
-              slidesPerView: 2
+              slidesPerView: 2,
             },
             1024: {
-              slidesPerView: 3
+              slidesPerView: 3,
             },
             1440: {
-              slidesPerView: 3
-            }
+              slidesPerView: 3,
+            },
           }}
           loopAddBlankSlides={true}
           // grid={{
@@ -83,11 +83,11 @@ const SwiperSlider: FC<ISwiperSlider> = ({
           loop={true}
           autoplay={{
             delay: 2500,
-            disableOnInteraction: false
+            disableOnInteraction: false,
           }}
           pagination={{
             clickable: true,
-            dynamicBullets: true
+            dynamicBullets: true,
           }}
           // navigation={true}
           // navigation={{
@@ -100,7 +100,7 @@ const SwiperSlider: FC<ISwiperSlider> = ({
             Grid,
             Parallax,
             Mousewheel,
-            EffectFade
+            EffectFade,
           ]}
           {...swiperProps}
           // className="relative"
@@ -118,7 +118,7 @@ const SwiperSlider: FC<ISwiperSlider> = ({
             {!isBeginning && (
               <button
                 onClick={handlePrev}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-l-md z-10"
+                className="absolute left-0 top-1/2 z-10 -translate-y-1/2 transform rounded-l-md bg-gray-800 px-4 py-2 text-white"
               >
                 <FaLongArrowAltLeft />
               </button>
@@ -127,7 +127,7 @@ const SwiperSlider: FC<ISwiperSlider> = ({
             {!isEnd && (
               <button
                 onClick={handleNext}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-r-md z-10"
+                className="absolute right-0 top-1/2 z-10 -translate-y-1/2 transform rounded-r-md bg-gray-800 px-4 py-2 text-white"
               >
                 <FaLongArrowAltRight />
               </button>

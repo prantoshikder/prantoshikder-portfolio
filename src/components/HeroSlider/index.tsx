@@ -12,7 +12,7 @@ const images = [
   { id: 7, imgUrl: "/assets/hero-images/hero-image-7.jpg" },
   { id: 8, imgUrl: "/assets/hero-images/hero-image-8.jpg" },
   { id: 9, imgUrl: "/assets/hero-images/hero-image-9.jpg" },
-  { id: 10, imgUrl: "/assets/hero-images/hero-image-10.jpg" }
+  { id: 10, imgUrl: "/assets/hero-images/hero-image-10.jpg" },
 ];
 
 const HeroSlider = () => {
@@ -35,7 +35,7 @@ const HeroSlider = () => {
               key={image.id}
               className={`slide ${index === current ? "active" : ""}`}
               style={{
-                backgroundImage: `url(${image.imgUrl})`
+                backgroundImage: `url(${image.imgUrl})`,
               }}
             >
               <div className="bg-overlay"></div>
@@ -43,7 +43,7 @@ const HeroSlider = () => {
           ))}
         </div>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center z-10">
+        <div className="absolute left-1/2 top-1/2 z-10 flex w-full -translate-x-1/2 -translate-y-1/2 transform items-center justify-center">
           <h1>Slide</h1>
         </div>
       </div>

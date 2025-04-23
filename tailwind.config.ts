@@ -4,13 +4,13 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)"
+        foreground: "var(--foreground)",
       },
       screens: {
         xs: "475px",
@@ -19,8 +19,8 @@ const config: Config = {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
-        "3xl": "2000px"
-      }
+        "3xl": "2000px",
+      },
     },
     container: {
       // padding: "10px"
@@ -29,10 +29,10 @@ const config: Config = {
         sm: "2rem",
         lg: "4rem",
         xl: "5rem",
-        "2xl": "5rem"
-      }
-    }
+        "2xl": "5rem",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
 export default config;

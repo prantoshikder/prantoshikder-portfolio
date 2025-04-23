@@ -18,7 +18,7 @@ const images = [
   { id: 7, imgUrl: "/assets/hero-images/hero-image-7.jpg" },
   { id: 8, imgUrl: "/assets/hero-images/hero-image-8.jpg" },
   { id: 9, imgUrl: "/assets/hero-images/hero-image-9.jpg" },
-  { id: 10, imgUrl: "/assets/hero-images/hero-image-10.jpg" }
+  { id: 10, imgUrl: "/assets/hero-images/hero-image-10.jpg" },
 ];
 
 const ScrollBarSlider = () => {
@@ -31,14 +31,14 @@ const ScrollBarSlider = () => {
             slidesPerView={1}
             pagination={{
               el: ".blog-slider__pagination",
-              clickable: true
+              clickable: true,
             }}
             className="blog-slider__wrp !overflow-visible"
             modules={[Pagination, Navigation, Mousewheel, EffectFade]}
             effect="fade"
             loop={true}
             mousewheel={{
-              invert: false
+              invert: false,
             }}
           >
             {images.map((image: any, index: number) => (
@@ -49,7 +49,7 @@ const ScrollBarSlider = () => {
                     alt=""
                     width={300}
                     height={300}
-                    className="w-full h-full object-cover"
+                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="blog-slider__content">

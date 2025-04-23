@@ -15,7 +15,7 @@ const PageRender = ({ children }: { children: React.ReactNode }) => {
   return (
     <ConfigProvider
       theme={{
-        token: { fontFamily: "'Roboto', sans-serif" }
+        token: { fontFamily: "'Roboto', sans-serif" },
         // ...theme,
       }}
       direction="ltr"
