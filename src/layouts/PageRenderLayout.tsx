@@ -5,7 +5,7 @@ import Loader from "@/components/shared/Loader";
 import { ConfigProvider } from "antd";
 import React, { useEffect, useState } from "react";
 
-const PageRender = ({ children }: { children: React.ReactNode }) => {
+const PageRenderLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const PageRender = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default PageRender;
+export default PageRenderLayout;

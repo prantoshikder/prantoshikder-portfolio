@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
+import Container from "../shared/Container";
 import SwiperSlider from "../shared/SwiperSlider";
 
 const ProjectSlider = () => {
@@ -19,7 +20,7 @@ const ProjectSlider = () => {
   ];
 
   return (
-    <div className="container mx-auto my-5">
+    <Container>
       <SwiperSlider>
         {images.map((image: any) => (
           <SwiperSlide key={image.id}>
@@ -34,7 +35,7 @@ const ProjectSlider = () => {
           </SwiperSlide>
         ))}
       </SwiperSlider>
-    </div>
+    </Container>
   );
 };
 

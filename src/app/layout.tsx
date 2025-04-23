@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import PageRenderLayout from "../layouts/PageRenderLayout";
 import "../scss/main.scss";
-import PageRender from "./PageRender";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,7 +43,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} scrollbar antialiased`}
         suppressHydrationWarning={true}
       >
-        <PageRender>{children}</PageRender>
+        <PageRenderLayout>{children}</PageRenderLayout>
       </body>
     </html>
   );
